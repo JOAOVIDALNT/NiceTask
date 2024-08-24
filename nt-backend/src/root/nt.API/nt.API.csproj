@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -8,6 +8,16 @@
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\nt.Communication\nt.Communication.csproj" />
+    <ProjectReference Include="..\..\shared\nt.Exceptions\nt.Exceptions.csproj" />
+    <ProjectReference Include="..\nt.Application\nt.Application.csproj" />
   </ItemGroup>
 
 </Project>
